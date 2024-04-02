@@ -1,64 +1,334 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veysel'in Portföy Sitesi</title>
+    <meta charset="utf-8">
+    <title>Veysel'in Portfolio Sayfası</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Merhaba dünya</h1>
-    <a href=/>Anasayfa</a>
-    <a href="/hakkimda.html">Hakkımda</a>
-    <a href="/iletisim.html">İletişim</a>
-    <a href="/galeri/index.html">Galeri</a>
-    <a href="/Projelerim/index.html">Projelerim</a>
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Veysel</span>Güler</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Ana Sayfa</a>
+                <a href="#about" class="nav-item nav-link">Hakkımda</a>
+                <a href="#qualification" class="nav-item nav-link">Deneyimlerim</a>
+                <a href="#skill" class="nav-item nav-link">Yeteneklerim</a>
+                <a href="#service" class="nav-item nav-link">Hizmetlerim</a>
+                <a href="#portfolio" class="nav-item nav-link">Projelerim</a>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <hr>
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profil-min.jpg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Ben</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Veysel Güler</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <span class="typed-cursor"></span>
+                    <div class="typed-text d-none">Web Tasarımcı, Web Developer, Back End Developer</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p>Merhaba, ben veysel güler. 20 yaşındayım, 1 köpek babasıyım. <br> Acunmedya akademide yazılım eğitimi alıyorum</p>
-    <!-- ctrl + -->
-    <!-- undo - geri al - ctrl + z -->
-    <!-- redo - ileri al - ctrl + shift + z -->
-    <h3>Eğitimde ögrenecegim konular</h3>
-    <!-- unordered list -- sırasız liste -->
-    <ul>
-        <li>html</li> <!-- li ise list item -- liste elemeanı -->
-        <li>Css</li>
-        <li>Javascript</li>
-        <li>asp.net core c#</li>
-        <li>MsSql</li>
-    </ul>
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Hakkımda</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Hakkımda</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/profil-min.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Jr. Back End Developer</h3>
+                    <p>Merhaba Veysel, Acun Medya Akademisi'nde back-end eğitimi alırken kazandığım bilgi ve tecrübelerle donanımlı bir yazılım geliştiriciyim. Dinamik ve yenilikçi projelerde yer alarak sektöre katkıda bulunmayı hedefliyorum.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>İsim: <span class="text-secondary">Veysel Güler</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Doğum Tarih: <span class="text-secondary">21 Temmuz 2003</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Tecrübe: <span class="text-secondary">1 Yıl</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">veyselmor11@hotmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Adres: <span class="text-secondary">İstanbul, TR</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Mevcut</span></h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <ul>
-        <li>
-            Frontend
-            <ul>
-                <li>html</li>
-                <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">Css</a></li> <!-- liste içinde link vermek isterseniz bu şekilde -->
-                <li>Js</li>
-            </ul>
-        </li>
-        <li>
-            backend
-            <ul>
-                <li>Asp.neet Core C#</li>
-                <li>MsSql</li>
-            </ul>
-        </li>
-    </ul>
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Deneyimlerim</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Eğitim ve Deneyim</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Eğitimim</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Hukuk </h5>
+                            <p class="mb-2"><strong>İstanbul Üniversitesi</strong> | <small>2021 - 2025</small></p>
+                            <p>İstanbul Üniversitesi Hukuk Fakültesi'nde eğitim alarak, hukukun temel prensipleri ve adaletin sağlanması konusunda derin bir anlayış kazandım.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Tecrübelerim</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Back End Developer</h5>
+                            <p class="mb-2"><strong>Acunmedya Akademi</strong> | <small>2024</small></p>
+                            <p>Acun Medya Akademi'de back-end eğitimi almaya başladım, bu alanda kendimi geliştirmeyi ve yenilikçi projelere katkı sağlamayı hedefliyorum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Yetenekler</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Yeteneklerim</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Angular JS</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Wordpress</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Servis</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Servislerim</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Tasarım</h4>
+                    </div>
+                    <p>Web tasarımı hizmetimle, kullanıcı dostu, estetik ve işlevsel web siteleri oluşturarak markanızın çevrimiçi varlığını güçlendiriyorum.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Development</h4>
+                    </div>
+                    <p>Web geliştirme hizmetlerimle, dinamik ve yenilikçi çözümler sunarak işletmelerin dijital dünyada etkili bir şekilde var olmalarını sağlıyorum.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Uygulama Tasarımı</h4>
+                    </div>
+                    <p>Uygulama tasarımı konusundaki uzmanlığımı kullanarak, kullanıcı deneyimini ön planda tutan, etkileşimli ve yenilikçi mobil uygulamalar geliştiriyorum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">PROJELER</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Projelerim</h1>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/spor-projesi.png">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="/projelerim/portfoy/Projelerim/spor/index.html" target="_blank">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/gezi-proje.png" >
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="/projelerim/portfoy/Projelerim/gezi/index.html" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/hastane-projesi.png">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="/projelerim/portfoy/Projelerim/hastane/index.html" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/muzik-projesi.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/muzik-projesi.png" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/blog-sayfasi.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;"></h1>
+                <h1 class="position-absolute text-uppercase text-primary"></h1>
+            </div>
+            
+        </div>
+    </div>
 
 
-    <h3>Haftalık Ders programı:</h3>
-    <ol>
-        <li>Html Çalısmaları</li>
-        <li>Css Çalışmaları</li>
-        <li>C#'a Giriş</li>
-        <li>C# Uygulamaları</li>
-        <li>Veritabanı Çalışmaları</li>
-        <li>MVC Mimarisine Giriş</li>
-    </ol>
+
+
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/veysel-g%C3%BCler-6502b6300/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/veyselmorr/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>.--> Designed by Veysel Güler 
+        </div>
+    </div>
     
-    <hr>
-    Galeri için <a href="galeri/index.html">Tıklayın</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i> -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
